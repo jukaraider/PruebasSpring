@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ar.net.atos.prueba</groupId>
-	<artifactId>SpringBoot-Basic-WithJDBC</artifactId>
+	<artifactId>SpringBoot-JDBC</artifactId>
 	<version>1.0.0.1</version>
 	<name>SpringBoot-JDBC</name>
 	<description>Demo project for Spring Boot with JDBC</description>
