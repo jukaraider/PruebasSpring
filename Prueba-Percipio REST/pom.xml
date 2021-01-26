@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>Prueba-Percipio3</artifactId>
+	<artifactId>Prueba-Percipio-REST</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Prueba-Percipio3</name>
+	<name>Prueba-Percipio-REST</name>
 	<description>Se arma un REST service con los 4 verbos</description>
 
 	<properties>
