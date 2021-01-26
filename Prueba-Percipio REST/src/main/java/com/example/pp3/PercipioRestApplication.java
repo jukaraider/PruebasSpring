@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PruebaPercipio3Application {
+public class PercipioRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PruebaPercipio3Application.class, args);
+		SpringApplication.run(PercipioRestApplication.class, args);
 	}
 }
