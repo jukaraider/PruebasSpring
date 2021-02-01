@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "af445cd5-abca-4914-aa03-ba8fa6ab5b9d",
+		"name": "Pruebas-REST-DB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/products"
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductsCache",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/productsCache"
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/products/2"
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductCache",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/productsCache/3"
+			},
+			"response": []
+		},
+		{
+			"name": "AddProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Phone\",\r\n    \"category\": \"Electronics\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/products"
+			},
+			"response": []
+		},
+		{
+			"name": "AddProductAndUpdateCacheProducts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Phone\",\r\n    \"category\": \"Electronics\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/productsCache"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Teclado GAMEEER\",\r\n    \"category\": \"Electronics\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/products/2"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProductAndUpdateCacheProducts",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"SILLA GAMEEER\",\r\n    \"category\": \"Fourniture\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/productsCache/3"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/products/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProductAndUpdateCacheProducts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/productsCache/1"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
