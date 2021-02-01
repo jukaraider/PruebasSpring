@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "af445cd5-abca-4914-aa03-ba8fa6ab5b9d",
-		"name": "Pruebas-Percipio-REST",
+		"_postman_id": "b4e885c4-ee52-4d06-924a-8c22b1cb1539",
+		"name": "Pruebas-REST",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -65,6 +65,31 @@
 				"method": "DELETE",
 				"header": [],
 				"url": "http://localhost:8080/products/a3"
+			},
+			"response": []
+		},
+		{
+			"name": "Saludo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/greeting?name=asdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"greeting"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "asdf"
+						}
+					]
+				}
 			},
 			"response": []
 		}
