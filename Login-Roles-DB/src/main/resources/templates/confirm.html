@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Set Password Page</title>
+	<style type="text/css">
+		.success {
+			font-style: italic;
+			color: green;
+			padding-bottom: 8px; 
+		}
+		.failure {
+			font-style: oblique;
+			color: red;
+			padding-bottom: 8px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<h2>Set your password</h2>
+		</div>
+		<div th:if="${successMessage}" class="success" role="alert" th:text="${successMessage}">
+		</div>
+		<div th:if="${errorMessage}" class="failure" role="alert" th:text="${errorMessage}">
+		</div>
+		<div th:if="${invalidToken}" class="failure" role="alert" th:text="${invalidToken}">
+		</div>
+		
+		<form th:if="!${invalidToken}" th:action="@{/confirm}" action="#" method="post" class="m-t"
+			th:object="${setPassword}" id="passwordForm" role="form">
+			
+			<input type="hidden" name="token" th:value="${confirmationToken}" />
+			
+			<div>
+				<input type="password" name="password" id="password" placeholder="Password" 
+					class="form-control" required="required" />
+			</div><br>
+			
+			<button type="submit">Save</button>
+		</form>
+	</div>
+</body>
+</html>
